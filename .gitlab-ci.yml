@@ -8,7 +8,7 @@ trigger_site:
     - >
       curl --request POST
       --form token=${SLOP_SITE_TRIGGER_TOKEN}
-      --form ref=main
+      --form ref=master
       https://gitlab.com/api/v4/projects/${SLOP_SITE_PROJECT_ID}/trigger/pipeline
   only:
     - master
