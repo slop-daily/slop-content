@@ -34,6 +34,9 @@ snippet:
 Provide the snippet and any context (tool, intent, date). Review and edit the
 output before submitting.
 
+If you do not have push access, fork `https://gitlab.com/slop-daily/slop-content`
+and open a merge request from your fork.
+
 ## Model attribution
 
 Only mention a specific model when you have evidence (tool output, logs, or

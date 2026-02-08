@@ -15,6 +15,10 @@ metadata:
 - A code snippet (required).
 - Optional context: language, intended behavior, tool used, author handle, and date.
 
+## Repo access check
+- Target repo: https://gitlab.com/slop-daily/slop-content
+- If you do not have push access, fork the repo and open an MR from the fork.
+
 ## Output format
 - Markdown with valid frontmatter.
 - Frontmatter fields: title, date, tags, author, excerpt, tool, featured (optional), codeLanguage (optional).
