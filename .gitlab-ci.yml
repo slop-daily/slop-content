@@ -1,0 +1,14 @@
+stages:
+  - trigger
+
+trigger_site:
+  stage: trigger
+  image: curlimages/curl:8.5.0
+  script:
+    - >
+      curl --request POST
+      --form token=${SLOP_SITE_TRIGGER_TOKEN}
+      --form ref=main
+      https://gitlab.com/api/v4/projects/${SLOP_SITE_PROJECT_ID}/trigger/pipeline
+  only:
+    - master
