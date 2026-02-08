@@ -24,3 +24,5 @@ featured: false
 ```
 
 Last updated to verify CI triggers.
+
+Pipeline check: content update triggers site deploy.
