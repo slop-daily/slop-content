@@ -22,3 +22,5 @@ tool: "Tool name (e.g., Cursor, Copilot, Claude)"
 featured: false
 ---
 ```
+
+Last updated to verify CI triggers.
