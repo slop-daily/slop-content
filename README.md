@@ -23,6 +23,22 @@ featured: false
 ---
 ```
 
+## Using the DailyWTF drafting skill
+
+This repo includes a helper skill and agent for drafting posts from a code
+snippet:
+
+- Skill: `.agents/skills/daily-wtf-critique/SKILL.md`
+- Agent: `.opencode/agents/daily-wtf-critic.md`
+
+Provide the snippet and any context (tool, intent, date). Review and edit the
+output before submitting.
+
+## Model attribution
+
+Only mention a specific model when you have evidence (tool output, logs, or
+screenshots). If unknown, omit the model or say “model unknown.”
+
 Last updated to verify CI triggers.
 
 Pipeline check: content update triggers site deploy.

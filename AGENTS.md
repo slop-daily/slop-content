@@ -116,6 +116,37 @@ to refactor the codebase.
 - Do not modify CI unless explicitly requested.
 - Content changes are enough to trigger the deploy pipeline.
 
+## Skill and agent usage
+
+This repo includes a skill and an OpenCode agent for drafting posts:
+
+- Skill: `.agents/skills/daily-wtf-critique/SKILL.md`
+- Agent: `.opencode/agents/daily-wtf-critic.md`
+
+Recommended flow:
+
+1) Provide a code snippet and any context you have (tool, intent, date).
+2) Ask the `daily-wtf-critic` agent to draft a post using the
+   `daily-wtf-critique` skill.
+3) Review the output for accuracy, redactions, and frontmatter correctness.
+4) Save the file under `posts/YYYY/MM/slug.md`.
+
+Keep the excerpt under 300 characters and include a language tag on the
+code fence when known.
+
+## Model attribution (infer carefully)
+
+If you can reliably identify the model used to generate the code, mention it
+in the post body. Acceptable evidence includes:
+
+- The tool explicitly reporting the model name/version.
+- Logs, metadata, or screenshots provided with the submission.
+- Repro steps that show the model selection.
+
+If the model is unclear, do not guess. Use phrasing like “model unknown” or
+omit model attribution entirely. Keep `tool` in frontmatter as the tool name
+only (e.g., Copilot, Cursor, Claude), and reserve model details for the body.
+
 ## Cursor and Copilot rules
 
 No Cursor rules found in `.cursor/rules/` or `.cursorrules`.
