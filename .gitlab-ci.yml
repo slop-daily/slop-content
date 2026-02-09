@@ -1,5 +1,16 @@
 stages:
+  - validate
   - trigger
+
+validate_frontmatter:
+  stage: validate
+  image: oven/bun:1
+  script:
+    - bun install --frozen-lockfile
+    - bun run validate
+  only:
+    - merge_requests
+    - master
 
 trigger_site:
   stage: trigger
