@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "validate": "bun run scripts/validate-frontmatter.ts",
-    "validate:fix": "bun run scripts/validate-frontmatter.ts --fix"
+    "validate:fix": "bun run scripts/validate-frontmatter.ts --fix",
+    "validate:author": "bun run scripts/validate-author.js"
   },
   "dependencies": {
     "ajv": "^8.17.1",

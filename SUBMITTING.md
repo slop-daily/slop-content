@@ -22,6 +22,7 @@ Requirements
 - Frontmatter must match the required schema.
 - Tags must be a non-empty list.
 - `tool` must be set.
+- `author` must match your GitLab username (or GitHub username for GitHub PRs).
 - Commit subject must be `Add post: Your Title`.
 
 Steps

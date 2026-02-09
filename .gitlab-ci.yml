@@ -12,6 +12,17 @@ validate_frontmatter:
     - merge_requests
     - master
 
+validate_author:
+  stage: validate
+  image: oven/bun:1
+  variables:
+    GIT_DEPTH: 0
+  script:
+    - bun install --frozen-lockfile
+    - EXPECTED_AUTHOR="${GITLAB_USER_LOGIN}" bun run validate:author -- --diff-base "${CI_MERGE_REQUEST_DIFF_BASE_SHA}" --diff-head "${CI_COMMIT_SHA}"
+  only:
+    - merge_requests
+
 trigger_site:
   stage: trigger
   image: curlimages/curl:8.5.0
