@@ -8,6 +8,8 @@ This repo contains public submissions for Slop Daily.
 2. Follow the frontmatter schema in the template below.
 3. Open a merge request with context and source links.
 
+See `SUBMITTING.md` for the full guide, including the email patch workflow.
+
 ## Frontmatter template
 
 ```
