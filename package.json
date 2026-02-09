@@ -7,8 +7,10 @@
     "validate:fix": "bun run scripts/validate-frontmatter.ts --fix"
   },
   "dependencies": {
-    "yaml": "^2.7.0",
-    "glob": "^11.0.0"
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "glob": "^11.0.0",
+    "yaml": "^2.7.0"
   },
   "devDependencies": {
     "@types/bun": "^1.2.0"
