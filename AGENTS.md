@@ -134,6 +134,25 @@ Recommended flow:
 Keep the excerpt under 300 characters and include a language tag on the
 code fence when known.
 
+Global OpenCode setup
+
+- Skills can be loaded globally via `skills.paths` in
+  `~/.config/opencode/opencode.json`.
+- Example:
+
+```
+"skills": {
+  "paths": [
+    "/absolute/path/to/slop-content/.agents/skills"
+  ]
+}
+```
+
+- The config schema does not include a global agent path.
+- To use the agent anywhere, copy or symlink
+  `.opencode/agents/daily-wtf-critic.md` into each repo’s
+  `.opencode/agents/` directory.
+
 ## Model attribution (infer carefully)
 
 If you can reliably identify the model used to generate the code, mention it
