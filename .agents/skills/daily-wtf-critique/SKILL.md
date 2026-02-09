@@ -14,10 +14,21 @@ metadata:
 ## Inputs I expect
 - A code snippet (required).
 - Optional context: language, intended behavior, tool used, author handle, and date.
+- Optional source reference: repo URL or local path, plus file path and line range.
 
 ## Repo access check
 - Target repo: https://gitlab.com/slop-daily/slop-content
 - If you do not have push access, fork the repo and open an MR from the fork.
+
+## Using from any project
+- You can invoke this skill from any workspace by providing a snippet or a
+  source reference.
+- Preferred: include a short snippet directly in the prompt.
+- If referencing a repo, include:
+  - repo URL or local path
+  - file path
+  - line range (optional but preferred)
+- Keep the snippet minimal and redact secrets.
 
 ## Output format
 - Markdown with valid frontmatter.
