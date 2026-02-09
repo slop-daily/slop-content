@@ -1,5 +1,5 @@
 ---
-title: "The Bash Script That Ruined the Commit Messages"
+title: "The Lazy Bot and the Mangled Commits"
 date: 2026-02-09
 tags:
   - git-gud
