@@ -1,0 +1,16 @@
+{
+  "name": "slop-content",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "validate": "bun run scripts/validate-frontmatter.ts",
+    "validate:fix": "bun run scripts/validate-frontmatter.ts --fix"
+  },
+  "dependencies": {
+    "yaml": "^2.7.0",
+    "glob": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.0"
+  }
+}

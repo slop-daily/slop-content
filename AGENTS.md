@@ -11,17 +11,29 @@ Use these notes to keep submissions consistent and safe.
 
 ## Build / lint / test commands
 
-There are no local build, lint, or test commands defined in this repo.
+### Frontmatter validation
 
-- No `package.json`, `pyproject.toml`, `Makefile`, or test runner config.
-- `.gitlab-ci.yml` only triggers the site pipeline; it does not run tests here.
+Validate all post frontmatter with:
+
+```bash
+bun run validate
+```
+
+This checks:
+- Required fields: title, date, tags, author, excerpt, tool
+- Date format (YYYY-MM-DD)
+- Excerpt length (max 300 characters)
+- Tags is a non-empty array
+- YAML syntax validity
+
+Run with bun (available via nix-shell):
+```bash
+nix-shell -p bun --run "bun run validate"
+```
 
 ### Single test execution
 
-Not applicable. There is no test framework in this repository.
-
-If you believe tests exist, confirm first by locating a config file and update
-this document with verified commands.
+Not applicable. This is a content-only repository without a test framework.
 
 ## Required post format
 
